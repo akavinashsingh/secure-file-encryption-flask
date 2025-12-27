@@ -1,0 +1,19 @@
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="terminal">
+  <div class="header">
+    ▓▓ SECURE ACCESS ▓▓<br>
+    <span>XOR ENCRYPTION CONSOLE</span>
+  </div>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <form method="post">
+    <input name="username" placeholder="operator_id" required>
+    <input type="password" name="password" placeholder="access_key" required>
+    <button>AUTHENTICATE</button>
+  </form>
+
+  <a class="link" href="/register">initialize new operator</a>
+</div>

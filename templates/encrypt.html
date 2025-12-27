@@ -1,0 +1,15 @@
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="terminal">
+  <div class="header">
+    ▓▓ ENCRYPTION MODE ▓▓<br>
+    <span>XOR FILE LOCK</span>
+  </div>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <input name="key" placeholder="xor_encryption_key" required>
+    <button>EXECUTE ENCRYPTION</button>
+  </form>
+
+  <a class="link" href="/dashboard">return to command center</a>
+</div>

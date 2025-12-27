@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0b1d13, #020503);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff9c;
+}
+
+/* Terminal Window */
+.terminal {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(0, 15, 10, 0.9);
+  border: 1px solid #00ff9c40;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 0 40px #00ff9c25;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.header span {
+  color: #00ffaa;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  background: #020805;
+  border: 1px solid #00ff9c40;
+  color: #00ff9c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+input::placeholder {
+  color: #00ff9c70;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00ff9c;
+  color: #001a10;
+}
+
+/* Links */
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  color: #00ff9c80;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #00ff9c;
+}
+
+/* Errors */
+.error {
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}

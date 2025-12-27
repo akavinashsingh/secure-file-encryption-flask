@@ -1,0 +1,20 @@
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="terminal">
+
+  <div class="header">
+    ▓▓ COMMAND CENTER ▓▓<br>
+    <span>FILE SECURITY OPERATIONS</span>
+  </div>
+
+  <form action="/encrypt">
+    <button>▶ ENCRYPT FILE</button>
+  </form>
+
+  <br>
+
+  <form action="/decrypt">
+    <button>▶ DECRYPT FILE</button>
+  </form>
+
+  <a class="link" href="/logout">terminate session</a>
+</div>

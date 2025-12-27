@@ -1,0 +1,19 @@
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="terminal">
+  <div class="header">
+    ▓▓ OPERATOR SETUP ▓▓<br>
+    <span>SECURITY MODULE</span>
+  </div>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <form method="post">
+    <input name="username" placeholder="new_operator_id" required>
+    <input type="password" name="password" placeholder="encryption_passphrase" required>
+    <button>REGISTER OPERATOR</button>
+  </form>
+
+  <a class="link" href="/">return to access console</a>
+</div>
